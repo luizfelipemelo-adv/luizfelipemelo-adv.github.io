@@ -1,0 +1,31 @@
+SITE - LUIZ FELIPE MELO | ADVOCACIA E CONSULTORIA JURÍDICA
+Endereço final: https://luizfelipemelo-adv.github.io
+
+COMO PUBLICAR NO GITHUB (uma única vez)
+1. Entre em github.com com a conta luizfelipemelo-adv.
+2. Clique em "+" (canto superior direito) > "New repository".
+3. Em "Repository name" digite exatamente:  luizfelipemelo-adv.github.io
+   Deixe como "Public" e clique em "Create repository".
+4. Na página seguinte, clique no link "uploading an existing file".
+5. Descompacte este .zip no computador. Abra a pasta e arraste para o navegador
+   o arquivo index.html E a pasta assets (inteira). Este LEIA-ME pode ir junto.
+6. Role a página e clique em "Commit changes".
+7. Vá em Settings > Pages. Em "Source", escolha "Deploy from a branch",
+   branch "main", pasta "/ (root)", e clique em "Save".
+8. Aguarde alguns minutos e abra https://luizfelipemelo-adv.github.io
+
+COMO ALTERAR DEPOIS
+- Para trocar um texto: no repositório, clique em index.html > ícone do lápis,
+  edite o texto e clique em "Commit changes". O site se atualiza em 1-2 minutos.
+- Para trocar a foto: envie uma nova imagem com o mesmo nome
+  (assets/foto-luiz-felipe.jpg) pelo "Add file > Upload files".
+
+FORMULÁRIO DE CONTATO
+O formulário não precisa de servidor: ao clicar em enviar, ele monta a mensagem
+com os dados preenchidos e abre o WhatsApp (35) 99221-3840 ou o e-mail
+felipemelolemos@outlook.com, e a pessoa só confirma o envio.
+Para trocar o número ou o e-mail, edite as linhas WHATSAPP e EMAIL no final do index.html.
+
+DOMÍNIO PRÓPRIO (futuro)
+Ao registrar um domínio (ex.: luizfelipemelo.adv.br), configure-o em Settings > Pages >
+"Custom domain". Atualize também as duas linhas "og:" no topo do index.html.
