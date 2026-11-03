@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://luizfelipemelo-adv.github.io/sitemap.xml

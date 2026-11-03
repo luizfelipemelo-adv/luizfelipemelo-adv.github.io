@@ -41,7 +41,7 @@
   .nav { position: sticky; top: 0; z-index: 50; background: var(--navy); border-bottom: 3px solid var(--gold); }
   .nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 68px; }
   .nav .brand img { height: 34px; width: auto; }
-  .nav ul { display: flex; gap: 30px; list-style: none; align-items: center; }
+  .nav ul { display: flex; gap: 26px; list-style: none; align-items: center; }
   .nav ul a { color: #D5DBE4; text-decoration: none; font-size: 14px; font-weight: 500; letter-spacing: .02em; }
   .nav ul a:hover { color: var(--white); }
   .nav ul a.btn-nav { color: var(--navy); background: var(--gold-light); padding: 9px 18px; border-radius: var(--r); font-weight: 600; }
@@ -109,6 +109,25 @@
   .tl .when { display: block; font-size: 12.5px; color: #8E9AAD; letter-spacing: .06em; text-transform: uppercase; margin-top: 4px; }
   .tl p { font-size: 14px; color: #AEB8C7; margin-top: 6px; }
 
+  /* ARTIGOS */
+  .posts { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; margin-top: 48px; }
+  .post { display: flex; flex-direction: column; border: 1px solid var(--hair); border-radius: var(--r); padding: 28px 28px 24px; text-decoration: none; color: inherit; transition: border-color .2s, box-shadow .2s; }
+  .post:hover { border-color: var(--navy); box-shadow: 0 10px 30px rgba(26,42,65,.08); }
+  .post .tag { font-size: 11.5px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--gold); }
+  .post h3 { font-size: 18px; font-weight: 600; color: var(--navy); line-height: 1.4; margin-top: 10px; }
+  .post p { font-size: 14.5px; color: var(--grey); margin-top: 10px; flex: 1; }
+  .post .read { font-size: 14px; font-weight: 600; color: var(--navy); margin-top: 16px; }
+
+  /* DÚVIDAS */
+  .faq { background: var(--paper); }
+  .faq .list { margin-top: 40px; max-width: 860px; }
+  .faq details { background: var(--white); border: 1px solid var(--hair); border-radius: var(--r); margin-bottom: 12px; }
+  .faq summary { list-style: none; cursor: pointer; padding: 20px 56px 20px 24px; font-weight: 600; color: var(--navy); font-size: 16px; position: relative; }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after { content: "+"; position: absolute; right: 24px; top: 50%; transform: translateY(-50%); font-size: 22px; font-weight: 400; color: var(--gold); }
+  .faq details[open] summary::after { content: "\2212"; }
+  .faq details p { padding: 0 24px 22px; color: var(--text); font-size: 15px; }
+
   /* CONTATO */
   .contact .grid { display: grid; grid-template-columns: 4fr 7fr; gap: 56px; margin-top: 48px; align-items: start; }
   .channels a { display: flex; align-items: center; gap: 14px; padding: 16px 0; border-bottom: 1px solid var(--hair); text-decoration: none; }
@@ -175,7 +194,9 @@
     .hero .facts div { padding: 16px 0; border-bottom: 1px solid rgba(255,255,255,.08); }
     .about .grid, .career .cols, .contact .grid { grid-template-columns: 1fr; gap: 44px; }
     .about .photo { max-width: 380px; margin-right: 18px; }
-    .areas .cards, .steps { grid-template-columns: 1fr; }
+    .areas .cards, .steps, .posts { grid-template-columns: 1fr; }
+    .faq summary { font-size: 15px; padding: 18px 50px 18px 18px; }
+    .faq details p { padding: 0 18px 18px; }
     .row { grid-template-columns: 1fr; gap: 0; }
     form { padding: 24px 20px; }
   }
@@ -191,6 +212,8 @@
       <li><a href="#sobre">Sobre mim</a></li>
       <li><a href="#atuacao">Áreas de atuação</a></li>
       <li><a href="#trajetoria">Trajetória</a></li>
+      <li><a href="#artigos">Artigos</a></li>
+      <li><a href="#duvidas">Dúvidas</a></li>
       <li><a href="#contato" class="btn-nav">Contato</a></li>
     </ul>
   </div>
@@ -316,6 +339,38 @@
     </div>
   </section>
 
+  <!-- ARTIGOS -->
+  <section id="artigos">
+    <div class="wrap">
+      <div class="eyebrow">Artigos</div>
+      <h2 class="title">Seus direitos, explicados com clareza</h2>
+      <p class="lead">Decisões recentes dos tribunais e o que elas mudam na prática.</p>
+      <div class="posts">
+        <a class="post" href="artigos/cobranca-indevida-devolucao-em-dobro.html"><span class="tag">Direito do Consumidor</span><h3>Cobrança indevida: o STJ confirmou que a devolução é em dobro, sem precisar provar má-fé</h3><p>Decisão de setembro de 2026 dispensa a prova de má-fé e vale para todos os processos.</p><span class="read">Ler artigo &rarr;</span></a>
+        <a class="post" href="artigos/nome-negativado-aviso-email-sms-whatsapp.html"><span class="tag">Direito do Consumidor</span><h3>Nome negativado sem aviso? STJ define quando o aviso por e-mail, SMS ou WhatsApp é válido</h3><p>O aviso eletrônico vale, mas só se a entrega no contato informado pelo consumidor for comprovada.</p><span class="read">Ler artigo &rarr;</span></a>
+        <a class="post" href="artigos/devedor-cnh-passaporte-suspensos.html"><span class="tag">Processo Civil</span><h3>Ganhei o processo, mas o devedor não paga: ele pode ter a CNH e o passaporte suspensos?</h3><p>Os critérios fixados pelo STJ para medidas atípicas na cobrança judicial de dívidas.</p><span class="read">Ler artigo &rarr;</span></a>
+        <a class="post" href="artigos/pensao-ex-conjuge-vitalicia-pode-acabar.html"><span class="tag">Direito das Famílias</span><h3>Pensão para ex-cônjuge é para sempre? STJ admite rever até a pensão "vitalícia"</h3><p>Mesmo fixada como vitalícia em escritura, a pensão pode ser revista quando as circunstâncias mudam.</p><span class="read">Ler artigo &rarr;</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DÚVIDAS -->
+  <section class="faq" id="duvidas">
+    <div class="wrap">
+      <div class="eyebrow">Dúvidas frequentes</div>
+      <h2 class="title">Perguntas comuns sobre o atendimento</h2>
+      <div class="list">
+        <details><summary>Como funciona o atendimento online?</summary><p>O primeiro contato pode ser feito pelo formulário deste site ou pelo WhatsApp. A partir daí, as conversas acontecem por videochamada, telefone ou mensagem, e os documentos são enviados em formato digital. Como os processos são eletrônicos, é possível acompanhar casos em todo o Brasil sem necessidade de deslocamento.</p></details>
+        <details><summary>Você atende fora de Passos/MG?</summary><p>Sim. O atendimento presencial é feito em Passos/MG e região, e o atendimento online alcança clientes em todo o país. Quando o caso exigir algum ato presencial em outra cidade, isso é avaliado e combinado previamente.</p></details>
+        <details><summary>Como são definidos os honorários?</summary><p>Os honorários são definidos depois de entender o caso, considerando sua complexidade e o trabalho envolvido, e são formalizados em contrato escrito, com transparência sobre valores e forma de pagamento, observada a Tabela de Honorários da OAB/MG.</p></details>
+        <details><summary>Já tenho um processo com outro advogado. Posso trocar?</summary><p>Sim, o cliente pode trocar de advogado a qualquer momento. Pelo Código de Ética da OAB, o novo advogado deve dar ciência ao colega anteriormente constituído, salvo em situações urgentes. A transição é feita de forma organizada, para que o processo não seja prejudicado.</p></details>
+        <details><summary>Quais documentos devo separar?</summary><p>Depende do assunto, mas em geral ajudam: documento de identidade, comprovante de endereço, contratos, comprovantes de pagamento, conversas, e-mails, protocolos de atendimento e, se houver processo, o número dele. Não é preciso enviar tudo no primeiro contato; os documentos necessários são indicados no retorno.</p></details>
+        <details><summary>O que acontece depois que eu envio o formulário?</summary><p>Você recebe um retorno em até 24 horas úteis, pelo meio de contato que preferir, para entender melhor a situação. Todas as informações enviadas são tratadas com sigilo profissional.</p></details>
+        <details><summary>Quanto tempo demora um processo?</summary><p>Não é possível prometer prazos, porque a duração depende do tipo de ação, da complexidade do caso, da defesa da outra parte e do andamento do próprio Judiciário. O que é possível garantir é acompanhamento constante e informação clara sobre cada etapa.</p></details>
+      </div>
+    </div>
+  </section>
+
   <!-- CONTATO -->
   <section class="contact" id="contato">
     <div class="wrap">
@@ -383,7 +438,7 @@
             <div class="f"><label for="horario">Melhor horário</label>
               <select id="horario" name="horario"><option>Qualquer horário</option><option>Manhã</option><option>Tarde</option><option>Noite</option></select></div>
           </div>
-          <label class="consent"><input type="checkbox" id="lgpd"> Autorizo o uso destes dados exclusivamente para retorno do meu contato, nos termos da Lei Geral de Proteção de Dados (Lei 13.709/2018).</label>
+          <label class="consent"><input type="checkbox" id="lgpd"> Autorizo o uso destes dados exclusivamente para retorno do meu contato, nos termos da Lei Geral de Proteção de Dados (Lei 13.709/2018) e da <a href="politica-de-privacidade.html" target="_blank">política de privacidade</a>.</label>
           <div class="send">
             <button type="submit" class="btn btn-navy" data-via="whatsapp">
               <svg viewBox="0 0 24 24"><path d="M12 3.2a8.8 8.8 0 0 0-7.6 13.2L3.2 20.8l4.5-1.2A8.8 8.8 0 1 0 12 3.2z"/></svg>Enviar pelo WhatsApp</button>
@@ -405,7 +460,7 @@
         <p style="margin-top:16px">Luiz Felipe Melo Lemos · OAB/MG 241.659<br>Passos/MG · Atendimento presencial e online</p>
       </div>
       <div class="links">
-        <a href="#sobre">Sobre mim</a><a href="#atuacao">Áreas de atuação</a><a href="#trajetoria">Trajetória</a><a href="#contato">Contato</a>
+        <a href="#sobre">Sobre mim</a><a href="#atuacao">Áreas de atuação</a><a href="#trajetoria">Trajetória</a><a href="#artigos">Artigos</a><a href="#duvidas">Dúvidas</a><a href="#contato">Contato</a><a href="politica-de-privacidade.html">Política de privacidade</a>
         <a href="http://lattes.cnpq.br/0959187105621600" target="_blank" rel="noopener">Currículo Lattes</a>
       </div>
     </div>

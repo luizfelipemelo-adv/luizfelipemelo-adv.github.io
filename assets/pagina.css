@@ -1,0 +1,51 @@
+@font-face { font-family: "Montserrat"; font-weight: 400; font-display: swap; src: url("fonts/montserrat-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Montserrat"; font-weight: 500; font-display: swap; src: url("fonts/montserrat-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Montserrat"; font-weight: 600; font-display: swap; src: url("fonts/montserrat-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Montserrat"; font-weight: 700; font-display: swap; src: url("fonts/montserrat-latin-700-normal.woff2") format("woff2"); }
+
+:root { --navy: #1A2A41; --navy-deep: #131F31; --gold: #B59227; --gold-light: #C9A23A; --text: #2B3646; --grey: #677180; --hair: #E3E6EB; --paper: #F6F7F9; --r: 6px; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Montserrat", system-ui, sans-serif; color: var(--text); background: #fff; line-height: 1.75; font-size: 17px; -webkit-font-smoothing: antialiased; }
+a { color: var(--navy); }
+img { max-width: 100%; display: block; }
+
+.nav { background: var(--navy); border-bottom: 3px solid var(--gold); }
+.nav .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; height: 68px; display: flex; align-items: center; justify-content: space-between; }
+.nav img { height: 34px; width: auto; }
+.nav a.back { color: #D5DBE4; text-decoration: none; font-size: 14px; font-weight: 500; }
+.nav a.back:hover { color: #fff; }
+
+.head { background: var(--navy); color: #fff; padding: 56px 0 60px; }
+.head .in, .body .in { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+.eyebrow { font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--gold-light); }
+.head h1 { font-size: clamp(26px, 4vw, 38px); line-height: 1.25; font-weight: 600; margin-top: 14px; }
+.head .meta { font-size: 14px; color: #AEB8C7; margin-top: 18px; }
+
+.body { padding: 52px 0 72px; }
+.body p { margin-top: 18px; }
+.body h2 { font-size: 22px; font-weight: 600; color: var(--navy); margin-top: 40px; line-height: 1.35; }
+.body ul, .body ol { margin: 14px 0 0 22px; }
+.body li { margin-top: 8px; }
+.body strong { color: var(--navy); font-weight: 600; }
+.lead { font-size: 19px; color: var(--text); }
+.box { margin-top: 30px; padding: 22px 24px; background: var(--paper); border-left: 3px solid var(--gold); border-radius: 0 var(--r) var(--r) 0; }
+.box p:first-child { margin-top: 0; }
+.fontes { margin-top: 44px; padding-top: 22px; border-top: 1px solid var(--hair); font-size: 14px; color: var(--grey); }
+.fontes p { margin-top: 6px; }
+.author { margin-top: 36px; display: flex; gap: 16px; align-items: center; padding: 22px; border: 1px solid var(--hair); border-radius: var(--r); }
+.author img { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; object-position: top; }
+.author b { display: block; color: var(--navy); font-weight: 600; }
+.author span { font-size: 14px; color: var(--grey); }
+.cta { display: inline-block; margin-top: 26px; padding: 14px 24px; border-radius: var(--r); background: var(--navy); color: #fff; text-decoration: none; font-weight: 600; font-size: 15px; }
+.cta:hover { background: var(--navy-deep); }
+.more { margin-top: 48px; }
+.more h3 { font-size: 13px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); }
+.more a { display: block; padding: 14px 0; border-bottom: 1px solid var(--hair); text-decoration: none; font-weight: 500; color: var(--navy); }
+.more a:hover { color: var(--gold); }
+
+footer { background: var(--navy-deep); color: #AEB8C7; font-size: 13.5px; padding: 32px 0 0; }
+footer .in { max-width: 1120px; margin: 0 auto; padding: 0 24px 28px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+footer a { color: #D5DBE4; text-decoration: none; }
+.bar { display: flex; height: 6px; } .bar i { flex: 1; background: var(--navy); } .bar i + i { background: var(--gold); }
+
+@media (max-width: 700px) { body { font-size: 16px; } .head { padding: 40px 0 44px; } .body { padding: 36px 0 56px; } .lead { font-size: 17px; } }

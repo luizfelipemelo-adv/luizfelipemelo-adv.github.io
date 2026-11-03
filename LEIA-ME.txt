@@ -14,6 +14,14 @@ COMO PUBLICAR NO GITHUB (uma única vez)
    branch "main", pasta "/ (root)", e clique em "Save".
 8. Aguarde alguns minutos e abra https://luizfelipemelo-adv.github.io
 
+COMO ATUALIZAR O SITE QUE JÁ ESTÁ NO AR (com um .zip novo)
+1. Descompacte o .zip novo.
+2. No repositório luizfelipemelo-adv.github.io, clique em "Add file" > "Upload files".
+3. Arraste TODO o conteúdo da pasta (index.html, politica-de-privacidade.html,
+   sitemap.xml, robots.txt, LEIA-ME.txt e as pastas assets e artigos).
+   Arquivos com o mesmo nome são substituídos automaticamente.
+4. Clique em "Commit changes". Em 1 a 2 minutos o site estará atualizado.
+
 COMO ALTERAR DEPOIS
 - Para trocar um texto: no repositório, clique em index.html > ícone do lápis,
   edite o texto e clique em "Commit changes". O site se atualiza em 1-2 minutos.
