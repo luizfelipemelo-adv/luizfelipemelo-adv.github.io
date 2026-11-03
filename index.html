@@ -116,6 +116,11 @@
   .post .tag { font-size: 11.5px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--gold); }
   .post h3 { font-size: 18px; font-weight: 600; color: var(--navy); line-height: 1.4; margin-top: 10px; }
   .post p { font-size: 14.5px; color: var(--grey); margin-top: 10px; flex: 1; }
+  .post.featured { grid-column: 1 / -1; background: var(--navy); border-color: var(--navy); }
+  .post.featured h3 { color: #fff; font-size: 21px; }
+  .post.featured p { color: #C3CBD7; }
+  .post.featured .read { color: var(--gold-light); }
+  .post.featured:hover { border-color: var(--gold); }
   .post .read { font-size: 14px; font-weight: 600; color: var(--navy); margin-top: 16px; }
 
   /* DÚVIDAS */
@@ -346,6 +351,7 @@
       <h2 class="title">Seus direitos, explicados com clareza</h2>
       <p class="lead">Decisões recentes dos tribunais e o que elas mudam na prática.</p>
       <div class="posts">
+        <a class="post featured" href="artigos/justica-gratuita-stf-renda-ate-5-mil.html"><span class="tag">Processo Civil · Novo</span><h3>Justiça gratuita: o que muda com a decisão do STF para quem ganha até R$ 5 mil</h3><p>O STF fixou a renda de R$ 5 mil como critério para a gratuidade em todo o Judiciário. Entenda quem tem direito, o que comprovar e o que acontece com quem ganha mais.</p><span class="read">Ler artigo &rarr;</span></a>
         <a class="post" href="artigos/cobranca-indevida-devolucao-em-dobro.html"><span class="tag">Direito do Consumidor</span><h3>Cobrança indevida: o STJ confirmou que a devolução é em dobro, sem precisar provar má-fé</h3><p>Decisão de setembro de 2026 dispensa a prova de má-fé e vale para todos os processos.</p><span class="read">Ler artigo &rarr;</span></a>
         <a class="post" href="artigos/nome-negativado-aviso-email-sms-whatsapp.html"><span class="tag">Direito do Consumidor</span><h3>Nome negativado sem aviso? STJ define quando o aviso por e-mail, SMS ou WhatsApp é válido</h3><p>O aviso eletrônico vale, mas só se a entrega no contato informado pelo consumidor for comprovada.</p><span class="read">Ler artigo &rarr;</span></a>
         <a class="post" href="artigos/devedor-cnh-passaporte-suspensos.html"><span class="tag">Processo Civil</span><h3>Ganhei o processo, mas o devedor não paga: ele pode ter a CNH e o passaporte suspensos?</h3><p>Os critérios fixados pelo STJ para medidas atípicas na cobrança judicial de dívidas.</p><span class="read">Ler artigo &rarr;</span></a>
